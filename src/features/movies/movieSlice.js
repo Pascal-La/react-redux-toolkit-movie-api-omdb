@@ -2,7 +2,7 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
 import movieApi from "../../common/apis/movieApi";
 
-const APIKey = process.env.NEXT_PUBLIC_API_KEY_OMDB;
+const APIKey = "15b1c043";
 
 export const fetchAsyncMovies = createAsyncThunk(
   "movies/fetchAsyncMovies",
