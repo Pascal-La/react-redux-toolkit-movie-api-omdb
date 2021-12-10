@@ -16,7 +16,7 @@ const Header = () => {
     // </div>
 
     <div className="header">
-      <a href="/">
+      <a href="https://pascal.la">
         <h2>PL</h2>
       </a>
       <h1>MOVIE API</h1>

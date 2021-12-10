@@ -8,7 +8,7 @@ export const fetchAsyncMovies = createAsyncThunk(
   "movies/fetchAsyncMovies",
   async (title) => {
     const response = await movieApi.get(
-      `?apiKey=${APIKey}&s=${title}&type=movie`
+      `?apiKey=15b1c043&s=${title}&type=movie`
     );
     return response.data;
   }
@@ -18,7 +18,7 @@ export const fetchAsyncShows = createAsyncThunk(
   "movies/fetchAsyncShows",
   async (title) => {
     const response = await movieApi.get(
-      `?apiKey=${APIKey}&s=${title}&type=series`
+      `?apiKey=15b1c043&s=${title}&type=series`
     );
     return response.data;
   }
@@ -27,7 +27,7 @@ export const fetchAsyncShows = createAsyncThunk(
 export const fetchAsyncMovieOrShowDetail = createAsyncThunk(
   "movies/fetchAsyncMovieOrShowDetail",
   async (id) => {
-    const response = await movieApi.get(`?apiKey=${APIKey}&i=${id}&Plot=full`);
+    const response = await movieApi.get(`?apiKey=15b1c043&i=${id}&Plot=full`);
     return response.data;
   }
 );
